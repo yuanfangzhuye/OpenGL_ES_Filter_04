@@ -13,9 +13,9 @@
 		F2C51F7824EA65E500F1A132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F7724EA65E500F1A132 /* Assets.xcassets */; };
 		F2C51F7B24EA65E500F1A132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F7924EA65E500F1A132 /* LaunchScreen.storyboard */; };
 		F2C51F7E24EA65E500F1A132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C51F7D24EA65E500F1A132 /* main.m */; };
-		F2C51F8624EA67CB00F1A132 /* ym3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8524EA67CB00F1A132 /* ym3.jpg */; };
 		F2C51F8824EA67E900F1A132 /* spring.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8724EA67E900F1A132 /* spring.vsh */; };
 		F2C51F8A24EA67FA00F1A132 /* spring.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8924EA67FA00F1A132 /* spring.fsh */; };
+		F2C51F8C24EA6A3400F1A132 /* YM.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8B24EA6A3400F1A132 /* YM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		F2C51F7A24EA65E500F1A132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C51F7C24EA65E500F1A132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C51F7D24EA65E500F1A132 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F2C51F8524EA67CB00F1A132 /* ym3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ym3.jpg; sourceTree = "<group>"; };
 		F2C51F8724EA67E900F1A132 /* spring.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spring.vsh; sourceTree = "<group>"; };
 		F2C51F8924EA67FA00F1A132 /* spring.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spring.fsh; sourceTree = "<group>"; };
+		F2C51F8B24EA6A3400F1A132 /* YM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YM.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		F2C51F8424EA67BB00F1A132 /* LongLeg */ = {
 			isa = PBXGroup;
 			children = (
-				F2C51F8524EA67CB00F1A132 /* ym3.jpg */,
+				F2C51F8B24EA6A3400F1A132 /* YM.png */,
 				F2C51F8724EA67E900F1A132 /* spring.vsh */,
 				F2C51F8924EA67FA00F1A132 /* spring.fsh */,
 			);
@@ -146,10 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C51F7B24EA65E500F1A132 /* LaunchScreen.storyboard in Resources */,
+				F2C51F8C24EA6A3400F1A132 /* YM.png in Resources */,
 				F2C51F7824EA65E500F1A132 /* Assets.xcassets in Resources */,
 				F2C51F8A24EA67FA00F1A132 /* spring.fsh in Resources */,
 				F2C51F7624EA65E400F1A132 /* Main.storyboard in Resources */,
-				F2C51F8624EA67CB00F1A132 /* ym3.jpg in Resources */,
 				F2C51F8824EA67E900F1A132 /* spring.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
