@@ -16,6 +16,9 @@
 		F2C51F8824EA67E900F1A132 /* spring.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8724EA67E900F1A132 /* spring.vsh */; };
 		F2C51F8A24EA67FA00F1A132 /* spring.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8924EA67FA00F1A132 /* spring.fsh */; };
 		F2C51F8C24EA6A3400F1A132 /* YM.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C51F8B24EA6A3400F1A132 /* YM.png */; };
+		F2E88AD124FC962400556859 /* LongLegHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E88AD024FC962400556859 /* LongLegHelper.m */; };
+		F2E88AD424FC9DD600556859 /* LongLegVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E88AD324FC9DD600556859 /* LongLegVertexAttribArrayBuffer.m */; };
+		F2E88AD724FCA37E00556859 /* LongLegView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E88AD624FCA37E00556859 /* LongLegView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		F2C51F8724EA67E900F1A132 /* spring.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spring.vsh; sourceTree = "<group>"; };
 		F2C51F8924EA67FA00F1A132 /* spring.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spring.fsh; sourceTree = "<group>"; };
 		F2C51F8B24EA6A3400F1A132 /* YM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YM.png; sourceTree = "<group>"; };
+		F2E88ACF24FC962400556859 /* LongLegHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegHelper.h; sourceTree = "<group>"; };
+		F2E88AD024FC962400556859 /* LongLegHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegHelper.m; sourceTree = "<group>"; };
+		F2E88AD224FC9DD600556859 /* LongLegVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		F2E88AD324FC9DD600556859 /* LongLegVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		F2E88AD524FCA37E00556859 /* LongLegView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegView.h; sourceTree = "<group>"; };
+		F2E88AD624FCA37E00556859 /* LongLegView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 				F2C51F6C24EA65E400F1A132 /* AppDelegate.m */,
 				F2C51F7124EA65E400F1A132 /* ViewController.h */,
 				F2C51F7224EA65E400F1A132 /* ViewController.m */,
+				F2E88ACE24FC95F600556859 /* LongLegFunction */,
 				F2C51F8424EA67BB00F1A132 /* LongLeg */,
 				F2C51F7424EA65E400F1A132 /* Main.storyboard */,
 				F2C51F7724EA65E500F1A132 /* Assets.xcassets */,
@@ -86,6 +96,19 @@
 				F2C51F8924EA67FA00F1A132 /* spring.fsh */,
 			);
 			path = LongLeg;
+			sourceTree = "<group>";
+		};
+		F2E88ACE24FC95F600556859 /* LongLegFunction */ = {
+			isa = PBXGroup;
+			children = (
+				F2E88ACF24FC962400556859 /* LongLegHelper.h */,
+				F2E88AD024FC962400556859 /* LongLegHelper.m */,
+				F2E88AD524FCA37E00556859 /* LongLegView.h */,
+				F2E88AD624FCA37E00556859 /* LongLegView.m */,
+				F2E88AD224FC9DD600556859 /* LongLegVertexAttribArrayBuffer.h */,
+				F2E88AD324FC9DD600556859 /* LongLegVertexAttribArrayBuffer.m */,
+			);
+			path = LongLegFunction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E88AD424FC9DD600556859 /* LongLegVertexAttribArrayBuffer.m in Sources */,
+				F2E88AD724FCA37E00556859 /* LongLegView.m in Sources */,
 				F2C51F7324EA65E400F1A132 /* ViewController.m in Sources */,
 				F2C51F6D24EA65E400F1A132 /* AppDelegate.m in Sources */,
+				F2E88AD124FC962400556859 /* LongLegHelper.m in Sources */,
 				F2C51F7E24EA65E500F1A132 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenGL_ES_Filter_04/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenGL_ES_Filter_04/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
