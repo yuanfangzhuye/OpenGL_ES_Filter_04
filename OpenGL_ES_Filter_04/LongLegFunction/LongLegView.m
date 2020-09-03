@@ -240,4 +240,41 @@ typedef struct {
     [self.vertexAttribArrayBuffer drawArrayWithMode:GL_TRIANGLE_STRIP startVertexIndex:0 numberOfVertices:kVerticesCount];
 }
 
+- (void)stretchingFromStartY:(CGFloat)startY toEndY:(CGFloat)endY withNewHeight:(CGFloat)newHeight {
+    
+}
+
+- (CGFloat)textureTopY {
+    CGFloat textureTopYValue = (1 - self.vertices[0].positionCoord.y) / 2;
+    return textureTopYValue;
+}
+
+- (CGFloat)textureBottomY {
+    CGFloat textureBottomYValue = (1 - self.vertices[7].positionCoord.y) / 2;
+    return textureBottomYValue;
+}
+
+- (CGFloat)stretchAreaTopY {
+    CGFloat stretchAreaTopYValue = (1 - self.vertices[2].positionCoord.y) / 2;
+    return stretchAreaTopYValue;
+}
+
+- (CGFloat)stretchAreaBottomY {
+    CGFloat stretchAreaBottomYValue = (1 - self.vertices[5].positionCoord.y) / 2;
+    return stretchAreaBottomYValue;
+}
+
+- (CGFloat)textureHeight {
+    CGFloat textureHeightValue = self.textureBottomY - self.textureTopY;
+    return textureHeightValue;
+}
+
+- (UIImage *)createResult {
+    return nil;
+}
+
+- (void)updateTexture {
+    
+}
+
 @end

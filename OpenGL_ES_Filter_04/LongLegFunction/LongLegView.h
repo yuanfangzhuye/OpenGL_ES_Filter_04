@@ -21,6 +21,22 @@
 @property (nonatomic, weak) id<LongLegViewViewDelegate> springDelegate;
 @property (nonatomic, assign, readonly) BOOL hasChange; //拉伸区域是否被拉伸
 
+- (void)stretchingFromStartY:(CGFloat)startY toEndY:(CGFloat)endY withNewHeight:(CGFloat)newHeight;
+
+- (CGFloat)textureTopY;
+
+- (CGFloat)textureBottomY;
+
+- (CGFloat)stretchAreaTopY;
+
+- (CGFloat)stretchAreaBottomY;
+
+- (CGFloat)textureHeight;
+
+- (UIImage *)createResult;
+
+- (void)updateTexture;
+
 - (void)updateImage:(UIImage *)image;
 
 @end
